@@ -46,6 +46,8 @@ Este repositorio contiene ejercicios, proyectos y materiales de estudio relacion
 │   ├── resultados.md
 │   ├── resumen_s3.txt
 │   └── timana_david_PNL_semana3.ipynb
+├── semana4/                        # Contenido de la semana 4
+│   └── respuestas_foro_s4.md
 ├── env/                           # Entorno virtual de Python
 └── README.md
 ```
@@ -61,6 +63,11 @@ Este repositorio contiene ejercicios, proyectos y materiales de estudio relacion
 - Implementaciones prácticas con Python
 - Análisis de sentimientos
 - Procesamiento de texto con spaCy y NLTK
+
+### Semana 4: Redes Neuronales Recurrentes
+- Investigación sobre RNN y LSTM
+- Aplicaciones y características principales
+- Ventajas en el Procesamiento del Lenguaje Natural
 
 ## Instalación
 
