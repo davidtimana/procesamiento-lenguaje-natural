@@ -1,0 +1,58 @@
+Resumen por Fuente
+1. Tesis: "Evaluación de Técnicas de Procesamiento de Lenguaje Natural para Textos Cortos en Lenguaje Español" ()
+Este trabajo de graduación se centra en analizar y medir el impacto de diferentes técnicas de preprocesamiento de PLN en textos cortos en español, utilizando tweets como caso de estudio.
+• Objetivo: Evaluar cómo distintas combinaciones de técnicas y librerías de PLN afectan el rendimiento del análisis de sentimiento en español. El estudio busca llenar un vacío de información, ya que la mayoría de las investigaciones se centran en el inglés.
+• Metodología: Se utilizaron dos conjuntos de datos de tweets en español (sobre el Mundial de Fútbol 2018 y sobre tránsito). Se aplicaron técnicas de preprocesamiento como tokenización, lowercase (conversión a minúsculas), stop-word removal (eliminación de palabras vacías) y lematización. Estas técnicas se combinaron y se implementaron usando las librerías NLTK, SpaCy y FreeLing. El impacto se midió evaluando el rendimiento de un modelo de análisis de sentimiento (clasificador SVM) mediante métricas como F_measure.
+• Resultados Clave: La experimentación demostró que la elección de una combinación adecuada de técnicas de preprocesamiento, en particular la lematización y la conversión a minúsculas (lowercase), puede mejorar el rendimiento de la clasificación de sentimientos entre un 5% y un 9%. La librería SpaCy mostró buenos resultados en las combinaciones más efectivas.
+• Conclusión: No es recomendable usar todas las técnicas de preprocesamiento indiscriminadamente. En su lugar, se debe analizar cuidadosamente qué combinación es más adecuada para el dominio y la tarea específica, como el análisis de sentimiento en español.
+2. Artículo de Revisión: "Análisis del Estado Actual de Procesamiento de Lenguaje Natural" ()
+Este artículo ofrece una revisión general del estado del arte del PLN, describiendo sus conceptos fundamentales, aplicaciones, problemas y arquitecturas.
+• Definición y Disciplinas: Define el PLN como un campo de la inteligencia artificial y la lingüística computacional que permite a las máquinas procesar y comprender el lenguaje humano. Se apoya en la informática, la psicología y la ingeniería.
+• Niveles de Análisis: Describe la arquitectura de un sistema de PLN a través de diferentes niveles de análisis del lenguaje:
+    ◦ Fonológico: Estudio de los sonidos.
+    ◦ Morfológico: Configuración y estructura de las palabras.
+    ◦ Sintáctico: Reglas gramaticales y estructura de las oraciones.
+    ◦ Semántico: Significado de las palabras y oraciones.
+    ◦ Pragmático: Uso del lenguaje en un contexto real.
+• Aplicaciones: Menciona aplicaciones clave como la traducción automática, la recuperación y extracción de información, y el análisis de sentimientos.
+• Problemas Fundamentales: El principal desafío del PLN es la ambigüedad, que ocurre cuando una palabra o frase puede tener múltiples interpretaciones. Resolverla requiere un conocimiento preciso del contexto.
+• Enfoques: Distingue entre el enfoque simbólico (basado en reglas y conocimientos lingüísticos explícitos) y el estadístico (basado en modelos probabilísticos aprendidos de grandes volúmenes de datos).
+3. Libro Práctico: "Hands-On Natural Language Processing with Python"
+Este libro es una guía práctica para aplicar arquitecturas de aprendizaje profundo (Deep Learning) a tareas de PLN usando Python, TensorFlow y NLTK.
+• Conceptos Básicos: Introduce terminologías como corpus, tokenización, n-gramas y bolsa de palabras (bag-of-words).
+• Preprocesamiento con NLTK: Explica tareas de preprocesamiento como tokenización, stemming (derivación regresiva) y eliminación de palabras vacías utilizando la librería NLTK.
+• Aprendizaje Profundo: Introduce conceptos de Deep Learning como redes neuronales, perceptrones, funciones de activación (Sigmoid, ReLU), regularización (Dropout), Redes Neuronales Convolucionales (CNN) y Redes Neuronales Recurrentes (RNN), incluyendo LSTM. También presenta el framework TensorFlow.
+• Embeddings Semánticos: Detalla cómo crear representaciones vectoriales de palabras (word embeddings) que capturan su significado semántico, cubriendo modelos como Word2vec (CBOW y skip-gram) y su extensión a documentos con Doc2vec.
+• Aplicaciones Avanzadas: A lo largo de sus capítulos, aborda una amplia gama de aplicaciones de PLN con Deep Learning:
+    ◦ Clasificación de texto (spam, tópicos) usando LSTM y CNN.
+    ◦ Reconocimiento de Entidades Nombradas (NER) usando LSTMs a nivel de caracteres.
+    ◦ Generación y resumen de texto con GRUs.
+    ◦ Sistemas de Pregunta-Respuesta (QA) y Chatbots usando redes de memoria.
+    ◦ Traducción automática con modelos basados en atención.
+    ◦ Reconocimiento de voz (DeepSpeech) y síntesis de voz (Tacotron).
+4. Libro Práctico: "Natural Language Processing and Computational Linguistics"
+Similar al anterior, este libro es una guía práctica para el análisis de texto, pero se enfoca en un ecosistema de herramientas que incluye Gensim, spaCy y Keras, además de Python.
+• Herramientas: Presenta spaCy como una librería de "fuerza industrial" para preprocesamiento (tokenización, POS-tagging, NER) y Gensim para la vectorización de texto y modelos de tópicos.
+• Vectorización: Explica la necesidad de convertir texto en vectores numéricos y detalla modelos como bolsa de palabras (Bag-of-Words) y TF-IDF.
+• Lingüística Computacional con spaCy: Profundiza en tareas como POS-tagging, NER-tagging y Dependency Parsing, mostrando cómo spaCy permite no solo usar modelos pre-entrenados sino también entrenar modelos propios.
+• Modelado de Tópicos con Gensim: Explica qué son los modelos de tópicos y cómo implementarlos con Gensim, cubriendo algoritmos como Latent Dirichlet Allocation (LDA) y Latent Semantic Indexing (LSI) para descubrir temas ocultos en un corpus. También menciona cómo evaluar estos modelos mediante la coherencia de tópicos.
+• Aplicaciones de Machine Learning: Aborda la clasificación y el clustering de texto usando scikit-learn, así como la búsqueda de similitud y el resumen de texto con Gensim.
+• Word Embeddings y Deep Learning: Al igual que la otra guía, cubre Word2Vec y Doc2Vec y la aplicación de Deep Learning para texto usando Keras y spaCy, incluyendo Análisis de Sentimientos y Chatbots.
+5. Guía de Introducción: "La librería spaCy" ()
+Este documento es una guía concisa y directa para entender y usar la librería spaCy en español.
+• Funciones Principales: Enumera las tareas clave que spaCy realiza: tokenización, lematización, etiquetado gramatical (POS), análisis de dependencias, reconocimiento de entidades (NER) y vectorización.
+• Ventajas: Destaca su velocidad (escrita en Cython), la inclusión de modelos pre-entrenados para varios idiomas (incluido el español) y su orientación a proyectos de producción.
+• NER y POS: Explica de manera sencilla qué es el Reconocimiento de Entidades Nombradas (NER) y define etiquetas comunes como LOC (lugar), PER (persona) y ORG (organización). También define etiquetas de Part-of-Speech (POS) como NOUN (sustantivo) y VERB (verbo).
+• Instalación y Modelos: Proporciona los comandos para instalar spaCy y descargar el modelo en español (es_core_news_sm), explicando el significado de cada parte del nombre del modelo (es: español, core: general, news: entrenado con noticias, sm: pequeño).
+6. Transcripciones de Clases de PLN (Canal de David Timanà Leyton)
+Estas transcripciones capturan el contenido de clases sobre PLN, donde un profesor guía a los estudiantes a través de conceptos teóricos y ejercicios prácticos en Colab.
+• Clase 1: Estructura del Lenguaje Natural: El profesor introduce el PLN, sus disciplinas (lingüística, informática, psicología, ingeniería), los niveles de análisis (fonético a pragmático) y las fases de preprocesamiento (tokenización, normalización, limpieza, lematización). Se plantea un ejercicio práctico para aplicar estas fases a textos sobre salud, economía y tecnología.
+• Clase 2: Procesamiento Léxico y Morfológico: Se profundiza en la diferencia entre léxico (el "qué" de una palabra, su significado base como en un diccionario) y morfológico (el "cómo" cambia una palabra: género, número, tiempo verbal). Se usan metáforas (ej. la receta es el léxico, los ingredientes son la morfología) y se realizan ejemplos prácticos con spaCy para analizar textos en español, mostrando cómo la librería identifica tokens, lemas, categorías gramaticales (POS) y rasgos morfológicos.
+• Clase 3: Comparativa de Librerías: El profesor presenta y compara varias librerías de PLN: SpaCy (ya conocida, versátil), NLTK (más académica, enfocada en inglés, usa WordNet), Stanza (de Stanford, buena pero más lenta de instalar), y TextBlob (práctica para análisis de sentimientos, indica polaridad y subjetividad). Se enfatiza que cada librería tiene sus fortalezas y se deben elegir según la tarea.
+• Clase 4: Aplicación de Redes Neuronales: Se introducen las redes neuronales para PLN. Se diferencia entre redes neuronales tradicionales (FNN), que procesan datos de forma estática y sin memoria, y las redes neuronales recurrentes (RNN), que manejan secuencias y tienen memoria de contextos pasados. Se mencionan las CNN para imágenes y los Transformers. La clase incluye un ejemplo práctico en Colab con TensorFlow y Keras para construir un clasificador de sentimientos simple, mostrando cómo definir el modelo, entrenarlo y probarlo.
+7. Otros Documentos Académicos y Técnicos
+• ProQuestDocuments-2025-09-11.pdf: Este artículo analiza los mecanismos morfológicos de formación de verbos (derivación) en el léxico militar español del Renacimiento. Estudia procedimientos como la prefijación (ej. acometer), sufijación (ej. asaltar, campear) y parasíntesis (ej. acampar, atrincherar) utilizando un corpus de tratados militares de la época (DICTER).
+• jegiraldo,+1701-6356-1-PB.pdf: Describe la implementación de un asistente virtual académico (chatbot) para el Politécnico Colombiano Jaime Isaza Cadavid. Compara varias plataformas de chatbot como Dialogflow, IBM Watson, Amazon Lex y Rasa, eligiendo Dialogflow para el prototipo. El objetivo es mejorar los tiempos de respuesta y la experiencia de los estudiantes en procesos académicos.
+• neoins2014monografian2.pdf: Es una monografía detallada sobre PLN. La Parte I cubre fundamentos como expresiones regulares, autómatas finitos, morfología, n-gramas y etiquetado POS. La Parte II se adentra en gramáticas de contexto libre, análisis sintáctico (parsing), semántica y análisis semántico. La Parte III trata sobre el discurso, la extracción de información (incluyendo NER) y la generación de resúmenes.
+• Natural_Language_Processing_with_TensorFlow_Teach_....pdf: Un libro enfocado en el uso de TensorFlow para NLP. Cubre desde los fundamentos de TensorFlow hasta aplicaciones avanzadas como Word2vec, CNNs para clasificación de sentencias, RNNs y LSTMs para generación de texto, generación de descripciones para imágenes y traducción automática neuronal (NMT).
+En conjunto, estas fuentes te proporcionan una visión muy completa del Procesamiento de Lenguaje Natural, desde sus fundamentos teóricos y estructurales hasta la implementación práctica de modelos avanzados con las herramientas más populares del campo.
